@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgncbfl2am11y"]
+
+[ext_resource type="Texture2D" uid="uid://c4mloyutfhknt" path="res://Assets/kenney_tiny-dungeon/Tiles/tile_0087.png" id="1_oh0kk"]
+[ext_resource type="Script" path="res://Enemy.gd" id="2_jq2wv"]
+[ext_resource type="FontFile" uid="uid://bmkcpwq2mlk4h" path="res://Assets/fff-forward/FFFFORWA.TTF" id="3_ddb53"]
+
+[node name="Enemy" type="Sprite2D"]
+position = Vector2(571, 156)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oh0kk")
+script = ExtResource("2_jq2wv")
+blue = Color(0.282423, 0.262995, 0.678961, 1)
+green = Color(0.639023, 0.891965, 0.788682, 1)
+red = Color(0.79844, 0.377549, 0.494565, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -24.5
+offset_top = 12.5
+offset_right = 28.5
+offset_bottom = 28.5
+theme_override_fonts/normal_font = ExtResource("3_ddb53")
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "Type This"
+scroll_active = false
